@@ -1,0 +1,26 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "title": "Pôster Pavão",
+            "price": 89.99,
+            "image": ["https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRI74ni6NbSY2nSfMHhn3XS7Vg1Ur7HL7gofcT4pYB4NgVCbiGo"]
+        },
+        {
+            "id": 2,
+            "title": "Pôster Zebra",
+            "price": 32.99,
+            "image": [
+                "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWeTlpQjghxAWRgSjrWQTq_vh2dBb9_huO9-lUyQCSWWpVKsAM"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Pôster Hipopótamo",
+            "price": 32.99,
+            "image": [
+                "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAuLOErSb3eIqan7Sxhf7dCYZ4la1cgNhJTU1PXTY3QyOhOq1N"
+            ]
+        }
+    ]
+}

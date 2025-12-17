@@ -41,7 +41,7 @@ export default function Item(props) {
                 setQuantity(1)
             }
         });
-
+        
     }
 
     return (

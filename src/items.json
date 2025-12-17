@@ -3,7 +3,8 @@
         {
             "id": 1,
             "title": "Pôster Pavão",
-            "price": 89.99,
+            "description" : "E atenção com um magnífico pavão em azul intenso sobre um fundo geométrico ousado e colorido. As cores ricas e o padrão harmonioso criam um efeito visual impressionante. O poster traz uma sensação de elegância e vibração a qualquer ambiente em que seja colocado, transformando-o instantaneamente num espaço repleto de arte e sofisticação.",
+            "price": 99.99,
             "image": [
                 "https://img.gallerix.com/product/11087_77765.jpg?width=1080&height=1080&mode=fit&enlarge=true&_gl=1*1pbgjju*_gcl_au*MjEyMDEwOTM0Mi4xNzY2MDA4MTIw*_ga*MTM1NjgyODUxNi4xNzY2MDA4MTIx*_ga_2G2GPZNKG7*czE3NjYwMDgxMjAkbzEkZzEkdDE3NjYwMDgxODIkajYwJGwwJGgxMTAyNzY1NTYyJGRGbm40YlVyOXlpdVhXQkg3eEY0QnIxRW82SDBBOE1nVnJB"
             ]
@@ -11,6 +12,7 @@
         {
             "id": 2,
             "title": "Pôster Zebra",
+            "description" : "TESTE.",
             "price": 32.99,
             "image": [
                 "https://img.gallerix.com/product/11100_77819.jpg?width=1080&height=1080&mode=fit&enlarge=true&_gl=1*r22sip*_gcl_au*MjEyMDEwOTM0Mi4xNzY2MDA4MTIw*_ga*MTM1NjgyODUxNi4xNzY2MDA4MTIx*_ga_2G2GPZNKG7*czE3NjYwMDgxMjAkbzEkZzEkdDE3NjYwMDgyODYkajI4JGwwJGgxMTAyNzY1NTYyJGRGbm40YlVyOXlpdVhXQkg3eEY0QnIxRW82SDBBOE1nVnJB"
@@ -19,6 +21,7 @@
         {
             "id": 3,
             "title": "Pôster Hipopótamo",
+            "description" : "TESTE.",
             "price": 32.99,
             "image": [
                 "https://img.gallerix.com/product/11093_77795.jpg?width=896&mode=max"

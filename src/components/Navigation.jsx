@@ -6,6 +6,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import SendIcon from '@mui/icons-material/Send';
 import XIcon from '@mui/icons-material/X';
 
+import Swal from 'sweetalert2';
+
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState('recents');
 
@@ -19,22 +21,31 @@ export default function SimpleBottomNavigation() {
         label="Share"
         value="Share"
         icon={<SendIcon />}
-        onClick={() => alert('Enviado para o seu email!')}
+        onClick={() => 
+          Swal.fire({
+            title: "Enviado para o seu e-mail!",
+            icon: "success",
+            timer: 2000
+          })
+        }
       />
       <BottomNavigationAction
         label="WhatsApp"
         value="WhatsApp"
         icon={<WhatsAppIcon />}
+        onClick={() => window.open("https://web.whatsapp.com", "_blank")}
       />
       <BottomNavigationAction
         label="Instagram"
         value="Instagram"
         icon={<InstagramIcon />}
+        onClick={() => window.open("https://www.instagram.com/", "_blank")}
       />
       <BottomNavigationAction 
         label="X" 
         value="X" 
         icon={<XIcon />} 
+        onClick={() => window.open("https://x.com/", "_blank")}
       />
     </BottomNavigation>
   );

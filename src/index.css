@@ -58,6 +58,19 @@ header {
   margin-bottom: 50px;
 }
 
+.banner-home {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 47px;
+  left: 0px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #FFD621;
+  margin-bottom: 50px;
+  flex: 1;
+}
+
 .banner img {
   height: 158px;
 }
@@ -131,11 +144,10 @@ footer {
 }
 
 /* Parte relativa a cada item */
-
 .item {
-  width: 240px;
+  width: 340px;
   box-sizing: border-box;
-  height: 400px;
+  height: 500px;
   margin: 20px;
   padding: 20px 20px;
   background-color: white;
@@ -145,8 +157,8 @@ footer {
 }
 
 .item img {
-  width: 120px;
-  height: 120px;
+  width: 220px;
+  height: 250px;
   padding: 15px;
   justify-self: center;
 }

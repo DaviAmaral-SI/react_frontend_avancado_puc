@@ -4,14 +4,16 @@
             "id": 1,
             "title": "Pôster Pavão",
             "price": 89.99,
-            "image": ["https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRI74ni6NbSY2nSfMHhn3XS7Vg1Ur7HL7gofcT4pYB4NgVCbiGo"]
+            "image": [
+                "https://img.gallerix.com/product/11087_77765.jpg?width=1080&height=1080&mode=fit&enlarge=true&_gl=1*1pbgjju*_gcl_au*MjEyMDEwOTM0Mi4xNzY2MDA4MTIw*_ga*MTM1NjgyODUxNi4xNzY2MDA4MTIx*_ga_2G2GPZNKG7*czE3NjYwMDgxMjAkbzEkZzEkdDE3NjYwMDgxODIkajYwJGwwJGgxMTAyNzY1NTYyJGRGbm40YlVyOXlpdVhXQkg3eEY0QnIxRW82SDBBOE1nVnJB"
+            ]
         },
         {
             "id": 2,
             "title": "Pôster Zebra",
             "price": 32.99,
             "image": [
-                "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWeTlpQjghxAWRgSjrWQTq_vh2dBb9_huO9-lUyQCSWWpVKsAM"
+                "https://img.gallerix.com/product/11100_77819.jpg?width=1080&height=1080&mode=fit&enlarge=true&_gl=1*r22sip*_gcl_au*MjEyMDEwOTM0Mi4xNzY2MDA4MTIw*_ga*MTM1NjgyODUxNi4xNzY2MDA4MTIx*_ga_2G2GPZNKG7*czE3NjYwMDgxMjAkbzEkZzEkdDE3NjYwMDgyODYkajI4JGwwJGgxMTAyNzY1NTYyJGRGbm40YlVyOXlpdVhXQkg3eEY0QnIxRW82SDBBOE1nVnJB"
             ]
         },
         {
@@ -19,7 +21,7 @@
             "title": "Pôster Hipopótamo",
             "price": 32.99,
             "image": [
-                "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAuLOErSb3eIqan7Sxhf7dCYZ4la1cgNhJTU1PXTY3QyOhOq1N"
+                "https://img.gallerix.com/product/11093_77795.jpg?width=896&mode=max"
             ]
         }
     ]

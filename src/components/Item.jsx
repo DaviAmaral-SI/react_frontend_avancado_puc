@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 export default function Item(props) {
     const [quantity, setQuantity] = useState(1)
@@ -21,13 +22,26 @@ export default function Item(props) {
     }
 
     const buyItem = () =>{
-        if (window.confirm(`Preço final: ${new Intl.NumberFormat("pt-BR", {
-                                            style: "currency",
-                                            currency: "BRL"
-                                            }).format(Math.round((item.price * quantity) * 100) / 100)}`)) {
-            alert('Compra finalizada!')
-            setQuantity(1)
-        }
+
+        Swal.fire({
+            title: "Deseja finalizar a compra?",
+            text: `Preço final: ${new Intl.NumberFormat("pt-BR", {style: "currency", currency: "BRL"}).format(Math.round((item.price * quantity) * 100) / 100)}`,
+            icon: "question",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Sim",
+            cancelButtonText: "Não"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                title: "Compra finalizada!",
+                icon: "success"
+                });
+                setQuantity(1)
+            }
+        });
+
     }
 
     return (
@@ -39,7 +53,6 @@ export default function Item(props) {
                     style: "currency",
                     currency: "BRL"
                     }).format(item.price)}
-
             </h3>
             
             <Link to={`/items/${item.id}`} state={{ p: item}}>

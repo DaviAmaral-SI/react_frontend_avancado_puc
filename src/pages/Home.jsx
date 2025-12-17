@@ -7,7 +7,7 @@ export default function Home() {
     <div className="content-item">
       <header></header>
 
-      <section className="banner">
+      <section className="banner-home">
         <img src={banner} alt="Banner"/>
         <div className="text-intro">
             <p>Home</p>

@@ -4,9 +4,11 @@ import items from '../items.json'
 import Item from "../components/Item";
 
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";
+import { useNavigate } from 'react-router-dom'
 
 
 export default function Items() {
+  const navigate = useNavigate();
   const [itemList, setItemList] = useState(items.items);
   const [count, setCount] = useState(0);
   const [calculation, setCalculation] = useState(0);
@@ -23,8 +25,6 @@ export default function Items() {
 
   return (
     <div className="content-item">
-
-
       <header>
         <div className="user">
           <span>Usuário</span>
@@ -32,7 +32,7 @@ export default function Items() {
       </header>
 
       <section className="banner">
-        <img src={banner} alt="Banner" />
+        <img src={banner} alt="Banner" onClick={() => navigate('/') }/>
       </section>
 
       <section className="search-bar">
@@ -56,6 +56,7 @@ export default function Items() {
           </div>
         )}
       </section>
+      
       <footer></footer>
     </div>
   );

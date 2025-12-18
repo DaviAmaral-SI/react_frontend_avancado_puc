@@ -28,25 +28,49 @@ export default function SimpleBottomNavigation() {
             timer: 2000
           })
         }
+        sx={{
+            "&:hover": {
+              color: "#1976d2",
+            },
+          }}
       />
+
       <BottomNavigationAction
         label="WhatsApp"
         value="WhatsApp"
         icon={<WhatsAppIcon />}
         onClick={() => window.open("https://web.whatsapp.com", "_blank")}
+        sx={{
+            "&:hover": {
+              color: "#1976d2",
+            },
+          }}
       />
+
       <BottomNavigationAction
         label="Instagram"
         value="Instagram"
         icon={<InstagramIcon />}
         onClick={() => window.open("https://www.instagram.com/", "_blank")}
+        sx={{
+            "&:hover": {
+              color: "#1976d2", // Desired hover color
+            },
+          }}
       />
+
       <BottomNavigationAction 
         label="X" 
         value="X" 
         icon={<XIcon />} 
         onClick={() => window.open("https://x.com/", "_blank")}
+        sx={{
+            "&:hover": {
+              color: "#1976d2", // Desired hover color
+            },
+          }}
       />
+
     </BottomNavigation>
   );
 }

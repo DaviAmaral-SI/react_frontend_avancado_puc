@@ -11,13 +11,15 @@ export default function ItemDetails() {
     <div className="detailed-content">
         <div>
             <button className='back' onClick={() => navigate('/items')}> Voltar</button>
+
             <div>
                 <img className="detailed-image" src={state.p.image} alt='Não foi possível carregar a imagem'></img>
             </div>
             
             <div> 
-                <h2>{state.p.title} </h2>
-                <p> {state.p.description} </p>
+                <h2>{state.p.title} - {state.p.manufacturer}</h2>
+                <p>{state.p.description}</p>
+                <p>Tamanho: {state.p.size}</p>
             </div>
             
             <Grid

@@ -22,7 +22,6 @@ export default function Item(props) {
     }
 
     const buyItem = () =>{
-
         Swal.fire({
             title: "Deseja finalizar a compra?",
             text: `Preço final: ${new Intl.NumberFormat("pt-BR", {style: "currency", currency: "BRL"}).format(Math.round((item.price * quantity) * 100) / 100)}`,
@@ -41,12 +40,12 @@ export default function Item(props) {
                 setQuantity(1)
             }
         });
-        
+     
     }
 
     return (
         <article className="item">
-            <img src={item.image} alt="item"/>
+            <img src={item.image} alt="Imagem do item"/>
             
             <h3 className="price-item">
                 {new Intl.NumberFormat("pt-BR", {
@@ -65,8 +64,8 @@ export default function Item(props) {
                 <span>{quantity}</span>
                 <button className="plus" onClick={plus}>+</button>
             </div>
+
             <button className="buy" onClick={buyItem}>Comprar</button>
         </article>
-
     )
 }

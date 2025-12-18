@@ -51,14 +51,16 @@ export default function Items() {
             <WarningAmberIcon fontSize="large" />
             <p>Não há pôsteres disponíveis no momento</p>
           </div>
-        ) : filteredItems.length > 0 ? (
-          filteredItems.map((p, index) => (
-            <Item key={index} item={p} />
-          ))
-        ) : (
+        ) : filteredItems.length === 0 ? (
           <div className="no-results">
             <WarningAmberIcon fontSize="large" />
             <p>Nenhum item encontrado</p>
+          </div>
+        ) : (
+          <div className="items-grid">
+            {filteredItems.map((p, index) => (
+              <Item key={index} item={p} />
+            ))}
           </div>
         )}
       </section>

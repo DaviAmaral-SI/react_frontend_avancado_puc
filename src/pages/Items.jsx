@@ -13,6 +13,7 @@ export default function Items() {
   const [count, setCount] = useState(0);
   const [calculation, setCalculation] = useState(0);
 
+  const hasItems = itemList && itemList.length > 0;
   const [search, setSearch] = useState("");
 
   useEffect(() => {
@@ -45,7 +46,12 @@ export default function Items() {
       </section>
 
       <section className="main-items">
-        {filteredItems.length > 0 ? (
+        {!hasItems ? (
+          <div className="no-results">
+            <WarningAmberIcon fontSize="large" />
+            <p>Não há pôsteres disponíveis no momento</p>
+          </div>
+        ) : filteredItems.length > 0 ? (
           filteredItems.map((p, index) => (
             <Item key={index} item={p} />
           ))

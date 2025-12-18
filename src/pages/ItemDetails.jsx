@@ -18,6 +18,10 @@ export default function ItemDetails() {
             
             <div> 
                 <h2>{state.p.title} - {state.p.manufacturer}</h2>
+                <h3>Preço: {new Intl.NumberFormat("pt-BR", {
+                    style: "currency",
+                    currency: "BRL"
+                    }).format(state.p.price)}</h3>
                 <p>{state.p.description}</p>
                 <p>Tamanho: {state.p.size}</p>
             </div>

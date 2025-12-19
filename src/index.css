@@ -198,7 +198,7 @@ header {
   box-sizing: border-box;
 }
 
-.more-info{
+.more-info, .return-home{
   width: 250px;
   height: 60px;
   font-size: 20px;
@@ -401,7 +401,7 @@ footer {
 }
 
 .buy:hover, .back:hover, .more-info:hover{
-  color:#1976d2;
+  color:#95caff;
   border-color: #1976d2;
   background-color:black;
 }

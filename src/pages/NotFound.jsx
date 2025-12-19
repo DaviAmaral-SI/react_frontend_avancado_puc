@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 
+
 export default function NotFound() {
   const navigate = useNavigate();
 

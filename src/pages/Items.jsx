@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import banner from "../assets/banner.png";
 import items from '../items.json'
 import Item from "../components/Item";
-
+import { useNavigate } from 'react-router-dom';
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";
-import { useNavigate } from 'react-router-dom'
+import Tooltip from "@mui/material/Tooltip";
 
 
 export default function Items() {
@@ -33,16 +33,21 @@ export default function Items() {
       </header>
 
       <section className="banner">
-        <img src={banner} alt="Banner" onClick={() => navigate('/') }/>
+        <Tooltip title="Retornar à Página Inicial" arrow>
+          <img src={banner} alt="Banner" onClick={() => navigate('/') }/>
+        </Tooltip>
       </section>
 
       <section className="search-bar">
-        <input
-          type="text"
-          placeholder="Buscar pôster..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+        <Tooltip title="Digite o nome do item para buscar" arrow>
+          <input
+            type="text"
+            placeholder="Buscar pôster..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </Tooltip>
+        
       </section>
 
       <section className="main-items">

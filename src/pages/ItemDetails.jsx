@@ -1,6 +1,8 @@
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import SimpleBottomNavigation from '../components/Navigation';
+import Tooltip from "@mui/material/Tooltip";
 import { Grid } from "@mui/material";
+
 
 export default function ItemDetails() {
   let { state } = useLocation();
@@ -10,7 +12,9 @@ export default function ItemDetails() {
   return (
     <div className="detailed-content">
         <div>
-            <button className='back' onClick={() => navigate('/items')}> Voltar</button>
+            <Tooltip title="Retornar à lista de pôsteres" arrow>
+              <button className='back' onClick={() => navigate('/items')}> Voltar</button>
+            </Tooltip>
 
             <div>
                 <img className="detailed-image" src={state.p.image} alt='Não foi possível carregar a imagem'></img>

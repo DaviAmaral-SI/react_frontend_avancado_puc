@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import Tooltip from "@mui/material/Tooltip";
+
 
 export default function Item(props) {
     const [quantity, setQuantity] = useState(1)
@@ -40,32 +42,33 @@ export default function Item(props) {
                 setQuantity(1)
             }
         });
-     
     }
 
     return (
-        <article className="item">
-            <img src={item.image} alt="Imagem do item"/>
-            
-            <h3 className="price-item">
-                {new Intl.NumberFormat("pt-BR", {
-                    style: "currency",
-                    currency: "BRL"
-                    }).format(item.price)}
-            </h3>
-            
-            <Link to={`/items/${item.id}`} state={{ p: item}}>
-                <p className="name-item">{item.title}</p>
-            </Link>
+            <Tooltip title="Clique no nome do item para ler sua descrição" arrow>
+                <article className="item">
+                    <img src={item.image} alt="Imagem do item"/>
+                    
+                    <h3 className="price-item">
+                        {new Intl.NumberFormat("pt-BR", {
+                            style: "currency",
+                            currency: "BRL"
+                            }).format(item.price)}
+                    </h3>
+                    
+                    <Link to={`/items/${item.id}`} state={{ p: item}}>
+                        <p className="name-item">{item.title}</p>
+                    </Link>
 
-            <div className="quantity">
-                <span >Quantidade:</span>
-                <button disabled={valueButton} className="minus" onClick={minus}>-</button>
-                <span>{quantity}</span>
-                <button className="plus" onClick={plus}>+</button>
-            </div>
+                    <div className="quantity">
+                        <span >Quantidade:</span>
+                        <button disabled={valueButton} className="minus" onClick={minus}>-</button>
+                        <span>{quantity}</span>
+                        <button className="plus" onClick={plus}>+</button>
+                    </div>
 
-            <button className="buy" onClick={buyItem}>Comprar</button>
-        </article>
+                    <button className="buy" onClick={buyItem}>Comprar</button>
+                </article>
+            </Tooltip>
     )
 }

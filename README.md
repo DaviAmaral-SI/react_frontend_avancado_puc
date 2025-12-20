@@ -1,16 +1,31 @@
-# React + Vite
+# 🎨 Acervo de Pôsteres - FrontEnd Avançado
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto consiste em uma aplicação web desenvolvida em **React**, utilizando **React Router** para navegação entre páginas e **componentes reutilizáveis**, simulando uma loja de pôsteres.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Como executar a aplicação
 
-## React Compiler
+Certifique-se de ter o [Node.js](https://nodejs.org/en/download/) instalado (versão 18 ou superior recomendada).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Para instalar todas as dependências, é necessário abrir o terminal pelo diretório raiz do projeto e executar o seguinte comando (já com o ambiente virtual ativado).
 
-## Expanding the ESLint configuration
+```
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Para executar o projeto, execute:
+```
+npm run dev
+```
+
+Em seguida, basta entrar no endereço exibido no prompt, geralmente:
+```
+http://localhost:5173
+```
+
+---
+
+## Aviso!
+
+Todos os pôsteres foram baseados em produtos da loja **Gallerix**, para mais informações visite: [https://gallerix.pt/](https://gallerix.pt/).

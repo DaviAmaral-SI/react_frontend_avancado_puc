@@ -6,7 +6,7 @@ import { Grid } from "@mui/material";
 
 export default function ItemDetails() {
   let { state } = useLocation();
-  let { description } = useParams();
+  let { id } = useParams();
   let navigate = useNavigate();
 
   return (
@@ -26,6 +26,7 @@ export default function ItemDetails() {
                     style: "currency",
                     currency: "BRL"
                     }).format(state.p.price)}</h3>
+                <p>Nº Identificador: #{id}</p>
                 <p>{state.p.description}</p>
                 <p>Tamanho: {state.p.size}</p>
             </div>

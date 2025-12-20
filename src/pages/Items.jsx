@@ -6,6 +6,8 @@ import SearchBar from "../components/SearchBar";
 import { useNavigate } from 'react-router-dom';
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 import Tooltip from "@mui/material/Tooltip";
+import SimpleBottomNavigation from '../components/Navigation';
+import { Grid } from "@mui/material";
 
 
 export default function Items() {
@@ -71,6 +73,18 @@ export default function Items() {
         )}
       </section>
       
+      <Grid
+        container
+        direction="row"
+        spacing={1}
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <SimpleBottomNavigation/>
+      </Grid>
+
       <footer></footer>
     </div>
   );

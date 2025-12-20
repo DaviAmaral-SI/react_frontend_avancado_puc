@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import banner from "../assets/banner.png";
 import items from '../items.json'
 import Item from "../components/Item";
+import SearchBar from "../components/SearchBar";
 import { useNavigate } from 'react-router-dom';
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 import Tooltip from "@mui/material/Tooltip";
@@ -40,11 +41,11 @@ export default function Items() {
 
       <section className="search-bar">
         <Tooltip title="Digite o nome do item para buscar" arrow>
-          <input
-            type="text"
-            placeholder="Buscar pôster..."
+          <SearchBar
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={setSearch}
+            placeholder="Buscar pôster..."
+            tooltip="Digite o nome do item para buscar"
           />
         </Tooltip>
         

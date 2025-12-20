@@ -36,7 +36,11 @@ export default function SimpleBottomNavigation() {
           label="Share"
           value="Share"
           icon={<SendIcon />}
-          onClick={() => setShowAlert(true)}
+          onClick={() => {
+            setShowAlert(false);
+            setTimeout(() => setShowAlert(true), 0);
+          }}
+
           sx={{
               "&:hover": {
                 color: "#1976d2",
@@ -50,7 +54,10 @@ export default function SimpleBottomNavigation() {
           label="WhatsApp"
           value="WhatsApp"
           icon={<WhatsAppIcon />}
-          onClick={() => setShowAlert(true)}
+          onClick={() => {
+            setShowAlert(false);
+            setTimeout(() => setShowAlert(true), 0);
+          }}
           sx={{
               "&:hover": {
                 color: "#1976d2",
@@ -64,7 +71,10 @@ export default function SimpleBottomNavigation() {
           label="Instagram"
           value="Instagram"
           icon={<InstagramIcon />}
-          onClick={() => setShowAlert(true)}
+          onClick={() => {
+            setShowAlert(false);
+            setTimeout(() => setShowAlert(true), 0);
+          }}
           sx={{
               "&:hover": {
                 color: "#1976d2",
@@ -78,7 +88,10 @@ export default function SimpleBottomNavigation() {
           label="X" 
           value="X" 
           icon={<XIcon />} 
-          onClick={() => setShowAlert(true)}
+          onClick={() => {
+            setShowAlert(false);
+            setTimeout(() => setShowAlert(true), 0);
+          }}
           sx={{
               "&:hover": {
                 color: "#1976d2",
